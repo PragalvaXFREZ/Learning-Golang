@@ -27,4 +27,12 @@ func main() {
 	sort.Ints(highScores)
 
 	fmt.Println(highScores)
+
+	//how to remove a value from slice based on index
+
+	var courses = []string{"pragalva", "priya", "sapkota", "otsuka"}
+	fmt.Println(courses)
+	var index int = 2
+	courses = append(courses[:index], courses[index+1:]...)
+	fmt.Println(courses)
 }
